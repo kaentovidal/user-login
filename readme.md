@@ -1,8 +1,6 @@
 # User Login Form
 
+![preview](./design/design.gif)
 
-
-![video](./design/design.mp4)
-
-[Click here]() to see live preview
+[Click here](https://kaentovidal.github.io/user-login/) to see live preview
 
