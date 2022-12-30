@@ -2,5 +2,4 @@
 
 ![preview](./design/design.gif)
 
-01: [Click here](https://kaentovidal.github.io/user-login/placeholder.com) to see live preview
-
+<a href="https://kaentovidal.github.io/user-login/" target="_blank">Click here</a> to see live preview
