@@ -3,7 +3,10 @@
     src: url(fonts/Poppins/Poppins-Regular.ttf);
 }
 :root {
-    --bg: rgb(12, 12, 12);
+    --body-bg: rgb(104, 103, 103);
+    --bg-form: #28292d;
+    --fg-color:#45f3ff;
+    --letter-color: #afafaf;
 }
 
 html {
@@ -15,14 +18,14 @@ body {
     justify-content:center;
     align-items:center;
     min-height: 100vh;
-    background: var( --bg);
+    background: var( --body-bg);
 }
 
 main {
     position:relative;
     width: 380px;
     height: 420px;
-    background: #1c1c1c;
+    background: var(--body-bg);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -55,7 +58,7 @@ main::after {
 
 form {
     position: absolute;
-    background: #28292d;
+    background: var( --bg-form);
     z-index: 100;
     inset: 3px;
     border-radius: 8px;
@@ -65,7 +68,7 @@ form {
 }
 
 form h3 {
-    color: #45f3ff;
+    color: var(--fg-color);
     text-align: center;
     letter-spacing: 0.1rem;
 }
@@ -94,12 +97,12 @@ label span {
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
-    color: #afafaf;
+    color: var(--letter-color);
 }
 
 label input:valid ~ span,
 label input:focus ~ span {
-    color: #45f3ff;
+    color: var(--fg-color);
     transform: translateX(0px) translateY(-34px);
     font-size: 1em;
 }
@@ -110,7 +113,7 @@ label i {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #45f3ff;
+    background: var( --fg-color);
     border-radius: 4px;
     transition: 0.5s;
     pointer-events: none;
@@ -121,9 +124,6 @@ label input:focus ~ i {
     height: 36px;
 }
 
-
-
-
 .links {
     display: flex; 
     justify-content: space-between;
@@ -132,19 +132,19 @@ label input:focus ~ i {
 .links a {
     margin: 10px 0;
     font-size: 0.75em;
-    color: #8f8f8f;
+    color: var(--letter-color);
     text-decoration: none;
 }
 
 .links a:hover,
 .links a:nth-child(2) {
-    color: #45f3ff;
+    color: var(--fg-color);
 }
 
 input[type="submit"] {
     border: none;
     outline: none;
-    background: #45f3ff;
+    background: var(--fg-color);
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
